@@ -1736,3 +1736,53 @@ section,
   height: auto; /* Maintain aspect ratio */
   max-width: 100%; /* Ensure image does not exceed container width */
 }
+
+.review-slide {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.review-content p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.review-content h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between the logo and rating */
+  border: 2px solid #ddd; /* Optional: border around the container */
+  padding: 10px; /* Optional: padding around the container */
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #f9f9f9; /* Optional: background color */
+}
+
+.google-reviews-logo img {
+  height: 80px;
+  width: auto;
+}
+
+.overall-rating {
+  text-align: center;
+}
+
+.overall-rating h3 {
+  font-size: 2em;
+  color: #333; /* Text color for the rating */
+  margin: 0;
+}
+
+.overall-rating .rating-number {
+  font-size: 1em;
+  color: #666; /* Color for additional text or stars */
+}
