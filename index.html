@@ -43,8 +43,8 @@
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">rithinmedia@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9847664097</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:rithinmedia@gmail.com">rithinmedia@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+919847664097"> +91 9847664097</a></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           
@@ -71,6 +71,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="">Credit+</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -573,7 +574,6 @@
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
             <div class="loading">Loading</div>
-            <div class="error-message"></div>
             <div class="sent-message">Your subscription request has been sent. Thank you!</div>
           </form>
         </div>
@@ -588,7 +588,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by Royal Xerox IT Division, Images from <a href="https://www.freepik.com/"> www.freepik.com</a></a>
+        Made with ❤️ in Thiruvalla by Royal Xerox</a></a>
       </div>
     </div>
 
@@ -613,5 +613,25 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+<script>
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
 
+    if (response.ok) {
+      alert("Your message has been sent. Thank you!");
+    } else {
+      alert("There was an error sending your message. Please try again later.");
+    }
+  });
+</script>
 </html>
