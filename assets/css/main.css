@@ -1718,8 +1718,6 @@ section,
 }
 
 .swiper-container {
-  width: 100%;
-  height: 100%;
 }
 .swiper-slide {
   text-align: center;
@@ -1732,7 +1730,7 @@ section,
   align-items: center;
 }
 .swiper-slide img {
-  width: 400px; /* Fixed width for the image */
+  width: 600px; /* Fixed width for the image */
   height: auto; /* Maintain aspect ratio */
   max-width: 100%; /* Ensure image does not exceed container width */
 }
