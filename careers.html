@@ -25,7 +25,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/careers.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Day
@@ -67,11 +67,11 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#product">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#product">Products</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -82,93 +82,58 @@
   </header>
 
   <main class="main">
- <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade">
-      <div class="container">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </nav>
-        <h1>Portfolio Details</h1>
-      </div>
-    </div><!-- End Page Title -->
+    <br><br>
+    <!-- Careers Section -->
+  <section id="careers" class="careers section">
+    <div class="container section-title" data-aos="fade-up">
+      <span>Join Our Team</span>
+      <h2>Join Our Team</h2>
+      <p>Explore exciting opportunities and become part of Royal Xerox.</p>
+    </div>
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
+      <!-- Search & Filters -->
+      <div class="row mb-4">
+        <div class="col-lg-4 col-md-6 col-12 mb-2">
+          <input type="text" id="job-search" class="form-control" placeholder="Job Title">
         </div>
+        <div class="col-lg-3 col-md-6 col-6 mb-2">
+          <select id="job-location" class="form-control">
+            <option value="">All Locations</option>
+            <option value="Thiruvalla">Thiruvalla</option>
+            <option value="Remote">Remote</option>
 
+          </select>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 mb-2">
+          <select id="job-type" class="form-control">
+            <option value="">Job Type</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Internship">Internship</option>
+          </select>
+        </div>
+        <div class="col-lg-2 col-md-6 col-12 mb-2">
+          <button id="filter-btn" class="btn btn-primary w-100">Search</button>
+        </div>
       </div>
 
-    </section><!-- /Portfolio Details Section -->
+      <!-- Job Listings -->
+      <div class="row gy-4" id="job-listings">
+        
+    <!-- Blinking Disclaimer Banner -->
+    <div id="disclaimer-banner">
+    ⚠️ Disclaimer: We do not charge any fees at any stage of recruitment. 
+    Apply only through our official careers page or contact us at 
+    <a href="mailto:recruit@royalxerox.in">recruit@royalxerox.in</a>
+    </div>
 
-  
+        <center><h4>Sorry, Currently no vacancies available !</h4></center>
+    </div>
+  </section>
+  <!-- /Careers Section -->
+
   </main>
 
   <footer id="footer" class="footer position-relative dark-background">
@@ -199,6 +164,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="careers.html" class="active">Careers</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
@@ -239,6 +205,7 @@
         <p>Images from Freepik.com</p>
       </div>
     </div>
+    
 
   </footer>
 
