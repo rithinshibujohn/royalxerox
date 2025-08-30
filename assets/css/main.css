@@ -1784,3 +1784,64 @@ section,
   font-size: 1em;
   color: #666; /* Color for additional text or stars */
 }
+
+
+/*--------------------------------------------------------------
+# Brands Section - Manual Fade Animation
+--------------------------------------------------------------*/
+
+/* Keyframe definition for the fade in/out effect */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 2;
+  }
+}
+
+.brands .brand-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+  gap: 2rem; /* Space between logos */
+  margin-bottom: 2rem;
+}
+
+.brands .brand-row:last-child {
+  margin-bottom: 0;
+}
+
+.brands .brand-item {
+  min-width: 150px; /* Minimum width for each logo container */
+  text-align: center;
+  /* Apply the animation */
+  animation: fadeInOut 7s ease-in-out infinite;
+}
+
+.brands .brand-item img {
+  max-height: 55px; /* Control the max height of logos */
+  width: auto;
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.1s ease-in-out;
+}
+
+/* Pause animation and show in full color on hover */
+.brands .brand-item:hover {
+  animation-play-state: paused; /* Pause the fading effect */
+  transform: scale(1.1); /* Slightly enlarge the logo */
+}
+
+.brands .brand-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Staggering the animation delay for a dynamic effect */
+.brands .brand-row .brand-item:nth-child(1) { animation-delay: 0s; }
+.brands .brand-row .brand-item:nth-child(2) { animation-delay: 0.4s; }
+.brands .brand-row .brand-item:nth-child(3) { animation-delay: 0.8s; }
+.brands .brand-row .brand-item:nth-child(4) { animation-delay: 1.2s; }
+.brands .brand-row .brand-item:nth-child(5) { animation-delay: 1.6s; }
