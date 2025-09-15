@@ -1847,10 +1847,3 @@ section,
 .brands .brand-row .brand-item:nth-child(5) { animation-delay: 1.6s; }
 
 
-
-
-.established-text {
-  font-size: 14px;
-  font-family: Impact;
-  white-space: nowrap;
-}

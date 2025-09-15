@@ -66,32 +66,26 @@
 
     <div class="branding d-flex align-items-center">
 
-  <div class="container position-relative d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename"><img src="assets/img/logo.png" alt=""></h1>
-    </a>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename"><img src="assets/img/logo.png" alt=""></h1>
+        </a>
 
-    <!-- Established text -->
-    <div class="established-text mx-3">
-      <span>Established in 1996</span>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+
     </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#product">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-  </div>
-
-</div>
-
 
   </header>
 
@@ -136,7 +130,7 @@
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Best shop for Printing, DTP, Designing services in Thiruvalla</h3>
+            <h3>Best shop for Printing, DTP & Designing services in Thiruvalla</h3>
             <p class="fst-italic">
               Discover the Royal Xerox difference and let us help you make a lasting impression.
             </p>
@@ -432,29 +426,42 @@
 <!-- Software Product Section -->
 <section id="product" class="product section dark-background">
   <div class="container">
-  <h3>Products</h3>
+    <h3 class="text-center mb-4">Our Product</h3>
+
     <div class="row justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="100">
       <div class="col-xl-10">
         <div class="row align-items-center text-center text-md-start">
+          
           <!-- Product Logo -->
-          <div class="col-md-6">
-            <img src="assets/img/project/credit+.png" alt="Software Product Logo" class="img-fluid rounded" 
-                 style="max-width: 100%; height: auto; border: 2px solid #fff; border-radius: 10px;">
+          <div class="col-md-6 mb-4 mb-md-0 text-center">
+            <img src="assets/img/project/credit+.png" 
+                 alt="Credit+ Software Product Logo" 
+                 class="img-fluid rounded shadow-lg" 
+                 style="max-width: 100%; height: auto; border: 3px solid #fff; border-radius: 12px;">
           </div>
+          
           <!-- Product Description -->
           <div class="col-md-6">
-            <h4>Credit+</h4>
-            <p>
-              Simplify credit management with Credit+, an intuitive web application designed to streamline your shop’s credit and balance tracking. With features like customer management, real-time credit updates, and detailed balance summaries, Credit+ empowers you to stay on top of your finances effortlessly. Accessible on both mobile and tablets, it’s the perfect tool for modern businesses.
-            </p>
-            <a class="cta-btn mt-3" href="#contact">Get a Demo</a>
+            <p class="lead">The smarter way to manage your shop’s credits & balances:</p>
+            
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-people text-warning me-2"></i> Customer management with easy record tracking</li>
+              <li class="mb-2"><i class="bi bi-cash-coin text-success me-2"></i> Real-time credit & balance updates</li>
+              <li class="mb-2"><i class="bi bi-bar-chart-line text-info me-2"></i> Detailed reports & balance summaries</li>
+              <li class="mb-2"><i class="bi bi-phone text-primary me-2"></i> Mobile & tablet responsive design</li>
+              <li class="mb-2"><i class="bi bi-lightning-charge text-danger me-2"></i> Simple, fast, and user-friendly interface</li>
+            </ul>
+
+            <a class="cta-btn mt-3" href="#contact">Get a Free Demo</a>
           </div>
+
         </div>
       </div>
     </div>
   </div>
+</section>
+<!-- /Software Product Section -->
 
-</section><!-- /Software Product Section -->
 <!-- Brands Section -->
 <!-- =======================================================
   * Brands That Trust Us Section (Manual CSS Animation)
