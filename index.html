@@ -3,236 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Under Maintenance | We'll be back soon</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Website Unavailable</title>
     <style>
-        :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.2);
-            --text-color: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
         body {
-            height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #0f172a; /* Fallback */
-            overflow: hidden;
-            color: var(--text-color);
+            height: 100vh;
         }
-
-        /* Animated Mesh Background */
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(45deg, #4158D0, #C850C0, #FFCC70);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-        }
-
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Glassmorphism Card */
-        .maintenance-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 3rem;
-            text-align: center;
-            max-width: 600px;
+        .container {
+            background: #ffffff;
+            padding: 30px 20px;
+            max-width: 420px;
             width: 90%;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
         }
-
-        .logo {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            letter-spacing: -1px;
-        }
-
         h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 15px;
         }
-
         p {
-            font-size: 1.1rem;
-            opacity: 0.8;
-            margin-bottom: 2.5rem;
+            font-size: 15px;
+            color: #555;
             line-height: 1.6;
         }
-
-        /* Countdown Timer */
-        .countdown-container {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 2.5rem;
-        }
-
-        .time-box {
-            flex: 1;
-        }
-
-        .time-box span {
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .time-box label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.6;
-        }
-
-        /* Email Subscription */
-        .subscribe-form {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 2rem;
-        }
-
-        input[type="email"] {
-            flex: 1;
-            padding: 12px 20px;
-            border-radius: 12px;
-            border: 1px solid var(--glass-border);
-            background: rgba(255, 255, 255, 0.05);
-            color: white;
-            outline: none;
-        }
-
-        button {
-            padding: 12px 24px;
-            border-radius: 12px;
-            border: none;
-            background: #fff;
-            color: #764ba2;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        /* Social Icons */
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            opacity: 0.7;
-            transition: 0.3s;
-        }
-
-        .social-links a:hover {
-            opacity: 1;
-            transform: scale(1.1);
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 480px) {
-            .maintenance-card { padding: 2rem 1.5rem; }
-            h1 { font-size: 1.5rem; }
-            .subscribe-form { flex-direction: column; }
-            .time-box span { font-size: 1.5rem; }
+        .note {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777;
         }
     </style>
 </head>
 <body>
-
-    <div class="background"></div>
-
-    <main class="maintenance-card">
-        <div class="logo"></div>
-        <h1>We’re tuning things up.</h1>
-        <p>Our website is currently undergoing scheduled maintenance to improve your experience. We’ll be back shortly!</p>
-
-        <!-- Countdown Timer -->
-        <div class="countdown-container">
-            <div class="time-box">
-                <span id="days">00</span>
-                <label>Days</label>
-            </div>
-            <div class="time-box">
-                <span id="hours">00</span>
-                <label>Hours</label>
-            </div>
-            <div class="time-box">
-                <span id="minutes">00</span>
-                <label>Mins</label>
-            </div>
-            <div class="time-box">
-                <span id="seconds">00</span>
-                <label>Secs</label>
-            </div>
+    <div class="container">
+        <h1>Website Unavailable</h1>
+        <p>
+            This website is currently inactive and has been removed.
+            The domain is not being used for any business, service, or commercial purpose.
+        </p>
+        <p>
+            Necessary changes are being carried out in compliance with applicable requirements.
+        </p>
+        <div class="note">
+            Thank you for your understanding.
         </div>
-
-        <!-- Notification Form -->
-        <form class="subscribe-form" onsubmit="event.preventDefault(); alert('We will notify you!');">
-            <input type="email" placeholder="Enter your email for updates" required>
-            <button type="submit">Notify Me</button>
-        </form>
-
-        <!-- Social Media -->
-        <div class="social-links">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </main>
-
-    <script>
-        // Set the date we're counting down to (24 hours from now)
-        const countdownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
-
-        const updateTimer = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerText = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
-
-            if (distance < 0) {
-                clearInterval(updateTimer);
-                document.querySelector("h1").innerText = "We're back!";
-            }
-        }, 1000);
-    </script>
+    </div>
 </body>
 </html>
